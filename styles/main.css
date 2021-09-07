@@ -40,3 +40,21 @@ p {
     text-align: center;
     font-size: x-large;
 } */
+
+.blog-heading-2 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 80px;
+    text-align: justify;
+    margin: auto;
+}
+
+.blog-heading-3 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 50px;
+    text-align: justify;
+    margin: auto;
+}
+
+.code-div {
+    background-color: slategrey;
+}
