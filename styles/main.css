@@ -32,6 +32,7 @@
 p {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
+    text-align: justify;
 }
 
 /* centers list items */
@@ -57,4 +58,23 @@ p {
 
 .code-div {
     background-color: slategrey;
+}
+
+.class-example-blog {
+    font-size: 80px;
+    color: white;
+    background-color: grey;
+}
+
+#id-example-blog {
+    max-width: 100%;
+    border-color: black;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+}
+
+#id-example-html-image {
+    max-width: 100%;
+    height: auto;
 }
