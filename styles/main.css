@@ -99,6 +99,19 @@ p {
 #blog-image {
     max-width: 20%;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+.p-blog-questions {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color:slategray;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
 }
