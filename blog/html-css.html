@@ -9,54 +9,70 @@
     </head>
 
     <body>
-        <h1 class="heading-1">Technical Blog</h1>
-
-        <h2 class="blog-heading-2">CSS Concepts - class vs. id</h2>
-
-        <h3 class="blog-heading-3">.class</h3>
-        <p>The <span style="color:dodgerblue"><code>.class</code></span> selector allows us to apply the same style to different HTML elements at once.</p>
-        <p>How it does this is by matching the <span style="color:dodgerblue"><code>.class</code></span> selector name in the CSS file with the element that has the same <span style="color:dodgerblue"><code>class</code></span> attribute value in the HTML.</p> 
+        <header>
+            <nav class="heading-1">Technical Blog</nav>
+            <br>
+            <nav>
+                <div style="text-align:center">
+                    <a class="header-links" href="../index.html">Home</a>
+                    <a class="header-links" href="blog-index.html">Blog</a>
+                    <a class="header-links" href="https://github.com/victoria-fahey">GitHub</a>
+                </div>   
+            </nav>
+        </header>
         <br>
-        <p style="text-decoration: underline;"><strong>CSS syntax:</strong><br></p>
-        <div class="code-div">
-            <p><span style="color:whitesmoke"><code>.class {<br>
-                        css declarations;<br>
+        <div class="div-blog-content" style="text-align: center">
+            <h2 class="blog-heading-2">CSS Concepts - class vs. id</h2>
+            <br>
+            <h3 class="blog-heading-3">.class</h3>
+            <hr>
+            <br>
+            <p>The <span style="color:dodgerblue"><code>.class</code></span> selector allows us to apply the same style to different HTML elements at once.</p>
+            <p>How it does this is by matching the <span style="color:dodgerblue"><code>.class</code></span> selector name in the CSS file with the element that has the same <span style="color:dodgerblue"><code>class</code></span> attribute value in the HTML.</p> 
+            <br>
+            <p style="text-decoration: underline;"><strong>CSS syntax:</strong><br></p>
+            <div class="code-div">
+                <p><span style="color:whitesmoke"><code>.class {<br>
+                    css declarations;<br>
                     }</code></span></p>
-        </div>
-        <p>The <span style="color:dodgerblue"><code>class</code></span> selector can be used within an HTML file directly or used in an external CSS file to apply specific styling, and then called in an HTML file. However, for the sake of this blog we will only look at using the <span style="color:dodgerblue"><code>class</code></span> selector with an external css file.</p> 
-        <br>
-        <p style="text-decoration: underline;"><strong>Example:</strong><br></p> 
-        <p>Let's say we want to style all our blog headings so that they have the same font size and colour on top of a grey background.</p>  
-        <p>In our CSS file we would do the following:<br></p> 
-        <img src="images/class_example_css.png" alt="screenshot of code showing how to use .class selector in CSS file"> 
-        <p>The <span style="color: orangered;"><code>.blog-heading</code></span> indicates the name of our class that we are going to later call in our HTML file to apply this style. Naming classes always begin with a period at the front.</p>
-        <p>Inside the curly brackets we have our CSS declarations specifying our particluar style we want, so in this case our <span style="color: orangered;"><code>font-size</code></span> of 80px, white font <span style="color: orangered;"><code>color</code></span> on top of a grey <span style="color: orangered;"><code>background-color</code></span>.</p>
-        <p>Now let's see how we call our <span style="color:dodgerblue"><code>.class</code></span> in HTML: <br></p>
-        <img src="images/class_example_html.png" alt="screenshot of code showing how to use CSS class selector in HTML file">   
-        <p>We can see in the above code that when we call <span style="color: orangered;"><code>blog-heading</code></span> in HTML we drop the period.</p> 
-        <p>An example of the output can be found <a href="class_example_blog.html">here</a>.</p>
+            </div>
+            <p>The <span style="color:dodgerblue"><code>class</code></span> selector can be used within an HTML file directly or used in an external CSS file to apply specific styling, and then called in an HTML file. However, for the sake of this blog we will only look at using the <span style="color:dodgerblue"><code>class</code></span> selector with an external css file.</p> 
+            <br>
+            <p style="text-decoration: underline;"><strong>Example:</strong><br></p> 
+            <p>Let's say we want to style all our blog headings so that they have the same font size and colour on top of a grey background.</p>  
+            <p>In our CSS file we would do the following:<br></p> 
+            <img src="images/class_example_css.png" alt="screenshot of code showing how to use .class selector in CSS file"> 
+            <p>The <span style="color: orangered;"><code>.blog-heading</code></span> indicates the name of our class that we are going to later call in our HTML file to apply this style. Naming classes always begin with a period at the front.</p>
+            <p>Inside the curly brackets we have our CSS declarations specifying our particluar style we want, so in this case our <span style="color: orangered;"><code>font-size</code></span> of 80px, white font <span style="color: orangered;"><code>color</code></span> on top of a grey <span style="color: orangered;"><code>background-color</code></span>.</p>
+            <p>Now let's see how we call our <span style="color:dodgerblue"><code>.class</code></span> in HTML: <br></p>
+            <img src="images/class_example_html.png" alt="screenshot of code showing how to use CSS class selector in HTML file">   
+            <p>We can see in the above code that when we call <span style="color: orangered;"><code>blog-heading</code></span> in HTML we drop the period.</p> 
+            <p>An example of the output can be found <a href="class_example_blog.html">here</a>.</p>
         
-        <h3 class="blog-heading-3">#id</h3>
-        <p>The <span style="color:dodgerblue"><code>#id</code></span> selector is very similar to <span style="color:dodgerblue"><code>.class</code></span> except that it's used for selecting a single HTML element with a unique <span style="color:dodgerblue"><code>id</code></span> attribute value and is not reusable, unlike <span style="color:dodgerblue"><code>.class</code></span> which can be used for multiple HTML elements.</p>
-        <p>The other difference is that the <span style="color:dodgerblue"><code>#id</code></span> selector uses a hash # in front of the id name.</p>
-        <br>
-        <p style="text-decoration: underline;"><strong>CSS syntax:</strong><br></p>
-        <div class="code-div">
-            <p><span style="color:whitesmoke"><code>#id {<br>
-                        css declarations;<br>
+            <h3 class="blog-heading-3">#id</h3>
+            <hr>
+            <br>
+            <p>The <span style="color:dodgerblue"><code>#id</code></span> selector is very similar to <span style="color:dodgerblue"><code>.class</code></span> except that it's used for selecting a single HTML element with a unique <span style="color:dodgerblue"><code>id</code></span> attribute value and is not reusable, unlike <span style="color:dodgerblue"><code>.class</code></span> which can be used for multiple HTML elements.</p>
+            <p>The other difference is that the <span style="color:dodgerblue"><code>#id</code></span> selector uses a hash # in front of the id name.</p>
+            <br>
+            <p style="text-decoration: underline;"><strong>CSS syntax:</strong><br></p>
+            <div class="code-div">
+                <p><span style="color:whitesmoke"><code>#id {<br>
+                    css declarations;<br>
                     }</code></span></p>
+            </div>
+            <br>
+            <p style="text-decoration: underline;"><strong>Example:</strong><br></p>
+            <p>Let's say we wanted to add an image to our blog article and apply some styling to that image so that is rounded and has a solid black border surrounding it. </p>
+            <p>In our CSS file we would do the following:</p>
+            <img src="images/id_example_css.png" alt="screenshot of code showing how to use #id selector in CSS file">
+            <p>Notice the hash in <span style="color: orangered;"><code>#id-example-blog</code></span> which indicates the name of our id that we are going to use later in our HTML file.</p>
+            <p>Again, inside the curly brackets we have applied our styling of choice.</p>
+            <p>Now let's see how we call our <span style="color:dodgerblue"><code>#id</code></span> in HTML:</p>
+            <img id="id-example-html-image" src="images/id_example_html.png" alt="screenshot of code showing how to use #id selector in a HTML file">
+            <p>We can see in the above code that we referenced our <span style="color:dodgerblue"><code>#id</code></span> selector within the image element to apply our style.</p>
+            <p>Also notice how we drop the hash when we call the <span style="color:dodgerblue"><code>id</code></span> name in HTML.</p>
+            <p>An example of the output can be found <a href="id_example_blog.html">here</a>.</p>
         </div>
-        <br>
-        <p style="text-decoration: underline;"><strong>Example:</strong><br></p>
-        <p>Let's say we wanted to add an image to our blog article and apply some styling to that image so that is rounded and has a solid black border surrounding it. </p>
-        <p>In our CSS file we would do the following:</p>
-        <img src="images/id_example_css.png" alt="screenshot of code showing how to use #id selector in CSS file">
-        <p>Notice the hash in <span style="color: orangered;"><code>#id-example-blog</code></span> which indicates the name of our id that we are going to use later in our HTML file.</p>
-        <p>Again, inside the curly brackets we have applied our styling of choice.</p>
-        <p>Now let's see how we call our <span style="color:dodgerblue"><code>#id</code></span> in HTML:</p>
-        <img id="id-example-html-image" src="images/id_example_html.png" alt="screenshot of code showing how to use #id selector in a HTML file">
-        <p>We can see in the above code that we referenced our <span style="color:dodgerblue"><code>#id</code></span> selector within the image element to apply our style.</p>
-        <p>Also notice how we drop the hash when we call the <span style="color:dodgerblue"><code>id</code></span> name in HTML.</p>
-        <p>An example of the output can be found <a href="id_example_blog.html">here</a>.</p>
     </body>
 </html>
