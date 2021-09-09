@@ -1,5 +1,5 @@
 .heading-1 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 100px;
     color: whitesmoke;
     text-align: center;
@@ -8,8 +8,21 @@
     margin: auto;
 }
 
+.header-links {
+    font-family: 'Bebas Neue';
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+}
+
+a:hover {
+    color: royalblue;
+}
+
 .heading-2 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 80px;
     text-align: center;
     margin: auto;
@@ -43,14 +56,14 @@ p {
 } */
 
 .blog-heading-2 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 80px;
     text-align: justify;
     margin: auto;
 }
 
 .blog-heading-3 {
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Bebas Neue';
     font-size: 50px;
     text-align: justify;
     margin: auto;
@@ -77,4 +90,15 @@ p {
 #id-example-html-image {
     max-width: 100%;
     height: auto;
+}
+
+.div-blog-content {
+    margin: 60px;
+}
+
+#blog-image {
+    max-width: 20%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
