@@ -1,3 +1,5 @@
+/* main styling */
+
 .heading-1 {
     font-family: 'Bebas Neue';
     font-size: 100px;
@@ -8,6 +10,7 @@
     margin: auto;
 }
 
+/* links to other pages */
 .header-links {
     font-family: 'Bebas Neue';
     font-size: 40px;
@@ -15,6 +18,13 @@
     text-align: center;
     display: inline-block;
     padding: 10px;
+    text-decoration: none;
+}
+.header-links-icons img{
+    width: 40px;
+    height: 40px;
+    flex-wrap: nowrap;
+    align-items: center;
 }
 
 a:hover {
@@ -28,14 +38,6 @@ a:hover {
     margin: auto;
 }
 
-#profile-image {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .center-content {
     font-family: 'Roboto', sans-serif;
     font-size: 20px;
@@ -47,13 +49,6 @@ p {
     font-size: 20px;
     text-align: justify;
 }
-
-/* centers list items */
-/* ul li {
-    list-style-position: inside;
-    text-align: center;
-    font-size: x-large;
-} */
 
 .blog-heading-2 {
     font-family: 'Bebas Neue';
@@ -73,6 +68,34 @@ p {
     background-color: slategrey;
 }
 
+.div-blog-content {
+    margin: 60px;
+}
+
+.p-blog-questions {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+    color:slategray;
+}
+
+ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/* home page image */
+#profile-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* examples for blog */
+
 .class-example-blog {
     font-size: 80px;
     color: white;
@@ -90,23 +113,6 @@ p {
 #id-example-html-image {
     max-width: 100%;
     height: auto;
-}
-
-.div-blog-content {
-    margin: 60px;
-}
-
-.p-blog-questions {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: justify;
-    color:slategray;
-}
-
-ul {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: justify;
 }
 
 /* styling of blog links page */
@@ -136,4 +142,9 @@ ul {
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
+}
+
+/* image overlay hover effect */
+.image-hover:hover img {
+    opacity: 0.4;
 }
