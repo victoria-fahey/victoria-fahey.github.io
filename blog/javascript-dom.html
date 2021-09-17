@@ -108,7 +108,7 @@
                 For example, we could create an object on data we have collected about dolphins. This would have the following syntax:
             </p>
             <br>
-                <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 10px;">
+                <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 20px;">
                     <code>var dolphins = {<br>
                         species: "maui dolphin",<br>
                         age: 3,<br>
@@ -124,7 +124,7 @@
                 To get the value of the <code style="color: dodgerblue;">species</code> property in our <code style="color: dodgerblue;">dolphins</code> object we would write:
             </p>
             <br>
-            <div style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 10px;">
+            <div style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 20px;">
                 <p>
                     <code class="format">dolphins.species<span style="color:orangered;">   // returns "maui dolphin"</span></code>
                 </p>
@@ -162,13 +162,48 @@
             <h3 class="blog-heading-3">FUNCTIONS & WHY THEY'RE USEFUL</h3>
             <hr>
             <br>
-            <p>INSERT MORE CONTENT HERE</p>
+            <p>A function is a block of code designed to perform a particular task or calculate a value. The great thing about functions is that every function you make can be reusable and executed as many times as you want in your script. Functions are also a great way to reduce the need to repeat large chunks of code and are a way to give concise human-readable names to complex sections of code.</p>
+            <p>A function is declared  using the <code style="color: dodgerblue;">function</code> keyword and is comprised of: </p>
+            <p>
+                <ul>
+                    <li>The name of the function</li>
+                    <li>A list of parameters (can be one, many or none)</li>
+                    <li>The code to be executed by the function</li>
+                    <li>The function is executed when it has been called</li>
+                </ul>
+            </p>
+            <p>Function syntax:</p>
+            <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 20px;">
+                <code>
+                    function name(parameter1, parameter2, parameter3) {<br>
+                        <span style="color: orangered;">// code to be executed</span><br>
+                    }<br><br>
+                    name(parameter1, parameter2, parameter3) <span style="color: orangered;">// calling the function</span>
+                </code>
+            </p>
+            <p>Let’s look at an example, maybe we want to calculate the distance our car travels when we input it’s speed and time into our function. This is how we would write it:</p>
+            <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 20px;">
+                <code>
+                    function carDistance(speed, time) {<br>
+                        return speed * time;<br>
+                    }<br><br>
+
+                    carDistance(50, 2)  <span style="color: orangered;">// returns car distance of 100</span>
+                </code>
+            </p>
             <br>
 
             <h3 class="blog-heading-3">THE DOM & DEVTOOLS</h3>
             <hr>
             <br>
-            <p>INSERT MORE CONTENT HERE</p>
+            <p>The Document Object Model, also known as the DOM in programming lingo, is a programming interface for HTML. The DOM is like the glue that holds HTML, CSS, and JavaScript together and it translates the content of each of these languages to create a standardised object that we can access and easily modify. All webpages rely on the DOM to display and function properly.</p>
+            <p>The DOM is constructed as a tree of HTML objects:</p>
+            <img id="dom" src="images/dom.png" alt="tree view representation of the DOM">
+            <p>We can use JavaScript & web developer tools (DevTools) to manipulate and interact with the DOM to change, add, or delete HTML objects.</p>
+            <p>A simple example of using DevTools to manipulate objects in the DOM can be seen in the video below:</p>
+            <video width="100%" height="auto" controls>
+                <source src="images/DevTools.mp4" type="video/mp4">
+            </video>
             <br>
         </div>
     </body>

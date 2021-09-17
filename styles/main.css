@@ -66,6 +66,8 @@ p {
 
 .code-div {
     background-color: slategrey;
+    width: auto;
+    padding: 10px;
 }
 
 .div-blog-content {
@@ -154,10 +156,16 @@ img#if-else-png {
     height: auto;
 }
 
+/* code block container */
 code.format {
     background-color: #F2F2F2;
     color: dodgerblue;
     width: auto;
     height: auto;
     padding: 20px;
+}
+
+img#dom {
+    max-width: 100%;
+    height: auto;
 }
