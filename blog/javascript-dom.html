@@ -32,19 +32,131 @@
             <h3 class="blog-heading-3">The holy trinity - HTML, CSS, & JavaScript</h3>
             <hr>
             <br>
-            <p>INSERT CONTENT HERE</p>
+            <p>
+                HTML, CSS, and JavaScript are the core building blocks of almost every webpage you see and make up what I like to call the holy trinity of the internet. HTML provides the basic structure and content of sites, while CSS controls the styling, and JavaScript controls the behaviour and interactivity of websites. 
+            </p>
+            <p>
+                Think of a webpage as a house, and every house needs the structural foundations or bones to stand up right, think of this as HTML. Once we’ve built the house’s structure we need to add some interior design such as colours, paintings, furniture to give our house some personality, think of this as CSS. Now that we have the structure and aesthetics of our house, we need to make it more functional and liveable, so adding electrics, heating, and running water to our house, think of this as the JavaScript. 
+            </p>
+            <p>
+                As you see in our house analogy, building a website is much like building a house and you need all 3 of the building blocks (HTML, CSS, JavaScript) to create a functioning, structurally sound and good looking website! 
+            </p>
             <br>
 
             <h3 class="blog-heading-3">Control Flow & loops</h3>
             <hr>
             <br>
-            <p>INSERT MORE CONTENT HERE</p>
+            <p>
+                Control flow is the order in which the computer executes statements in a script. This means that when the computer reads a script it reads it from start to finish, and the order of the statements will dictate how the computer executes what you want to do. Think of control flow as reading a novel, you could read the book backwards and the sentences in jumbled order but you wouldn’t really understand what’s going on, so you read the book from start to finish and each sentence in their correct order to be able to fully understand the novel, similar to control flow.
+            </p>
+            <p>
+                An example of control flow when programming are if/else statements. With an if/else statement, the program will execute if the condition evaluates to true, otherwise if its false it will do something else. Let’s say we want to wake up in the morning and check the weather forecast to decide whether we should go surfing or not; if the weather is good we decide to go surfing and if the weather is not good we will stay in bed. 
+            </p>
+            <p>
+                Loops in JavaScript offer a quick and easy way to do something repeatedly. If we go back to our surfing analogy, we could also repeatedly check the weather forecast every hour for the next 4 hours to see if the conditions could still allow us to go surfing or not. 
+            </p>
+            <img id="if-else-png" src="images/if_else.png" alt="tree diagram example of if/else statement">
+            <br>
             <br>
 
             <h3 class="blog-heading-3">ARRAYS VS. OBJECTS</h3>
             <hr>
             <br>
-            <p>INSERT MORE CONTENT HERE</p>
+            <p>
+                Both arrays and objects are special data types in JavaScript that can be used to store a collection of data that can be mutable. 
+            </p>
+            <p style="text-decoration: underline; color: slategray;"><strong>ARRAYS</strong></p>
+            <p>
+                Arrays can be used when we want to create and store a list of multiple items in a single variable. 
+            </p>
+            <p>
+                For example, if we want to create a variable called <code style="color: dodgerblue;">fruits</code> with a list of different types of fruit stored in it. This would have the following syntax:
+            </p>
+            <br>
+            <p>
+                <code class="format">var fruits = ["banana","pineapple","watermelon","mango"]</code>
+            </p>
+            <br>
+            <p>
+                We can also access specific data from arrays using zero-based indexing. This means that the first item in an array has an index of 0. For example, we want to access <code style="color: dodgerblue;">"watermelon"</code>, the third fruit in our array we would write: 
+            </p>
+            <br>
+            <p>
+                <code class="format">fruits[2]<span style="color:orangered;">   // returns "watermelon"</span></code>
+            </p>
+            <br>
+            <p>
+                Items can also be added or removed from array using <code style="color: dodgerblue;">push()</code> or <code style="color: dodgerblue;">pop()</code> respectively. Let's say we want to add 'dragonfruit' and remove 'banana' from our fruits variable, we would write:
+            </p>
+            <br>
+            <div style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 10px;">
+                <p>
+                    <code><span style="color: orangered;">// adds item to the end of an array</span><br></code>
+                    <code>fruits.push('dragonfruit')<br></code>
+                </p>
+                <p>
+                    <code><span style="color: orangered;">// removes item from the end of an array</span><br></code>
+                    <code>fruits.pop()</code>
+                </p>
+            </div>
+            <br>
+            <p style="text-decoration: underline; color: slategray;"><strong>OBJECTS</strong></p>
+            <p>
+                Objects are used to represent data that can be defined by a certain set of characteristics. These characteristics are called properties that consists of a key and a value. 
+            </p>
+            <p>
+                For example, we could create an object on data we have collected about dolphins. This would have the following syntax:
+            </p>
+            <br>
+                <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 10px;">
+                    <code>var dolphins = {<br>
+                        species: "maui dolphin",<br>
+                        age: 3,<br>
+                        size: 1.5,<br>
+                        endangered: true
+                    </code>
+                </p>
+            <br>
+            <p>
+                Properties in objects can also be accessed, added, changed, and removed by using either the dot <code style="color: dodgerblue;">.notation</code> or bracket <code style=color:dodgerblue>[notation]</code>.
+            </p>
+            <p>
+                To get the value of the <code style="color: dodgerblue;">species</code> property in our <code style="color: dodgerblue;">dolphins</code> object we would write:
+            </p>
+            <br>
+            <div style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 10px;">
+                <p>
+                    <code class="format">dolphins.species<span style="color:orangered;">   // returns "maui dolphin"</span></code>
+                </p>
+                <p>
+                    <code class="format">dolphins['species']<span style="color:orangered;">   // returns "maui dolphin"</span></code>
+                </p>
+            </div>
+            <br>
+            <p>
+                If we wanted to change the endangered status of the dolphin to false we would write:
+            </p>
+            <br>
+            <p>
+                <code class="format">dolphins.endangered = true</code>
+            </p>
+            <br>
+            <p>
+                And if we wanted to add a new property like skinColour to our dolphin object we would write:
+            </p>
+            <br>
+            <p>
+                <code class="format">dolphins.skinColour = ["grey", "white"]</code>
+            </p>
+            <br>
+            <p>
+                Finally we could also remove the age property from our dolphins object like this:
+            </p>
+            <br>
+            <p>
+                <code class="format">delete dolphins.age</code>
+            </p>
+            <br>
             <br>
 
             <h3 class="blog-heading-3">FUNCTIONS & WHY THEY'RE USEFUL</h3>

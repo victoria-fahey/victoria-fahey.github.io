@@ -148,3 +148,16 @@ ul {
 .image-hover:hover img {
     opacity: 0.4;
 }
+
+img#if-else-png {
+    max-width: 100%;
+    height: auto;
+}
+
+code.format {
+    background-color: #F2F2F2;
+    color: dodgerblue;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
