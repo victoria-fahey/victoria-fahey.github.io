@@ -76,9 +76,22 @@ p {
 
 .p-blog-questions {
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    text-align: justify;
+    font-size: 25px;
+    text-align: left;
     color:slategray;
+}
+
+h3.blog-questions {
+    font-family: 'Roboto', sans-serif;
+    color: slategrey;
+    font-size: 25px;
+    text-align: left;
+}
+
+p.quotes {
+    font-family: 'Lobster', cursive;
+    font-size: 35px;
+    text-align: center;
 }
 
 ul {
