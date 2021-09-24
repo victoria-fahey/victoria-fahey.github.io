@@ -69,91 +69,103 @@
         <p>
             For example, if we want to create a variable called <code style="color: dodgerblue;">fruits</code> with a list of different types of fruit stored in it. This would have the following syntax:
         </p>
-        <br>
-        <p>
-            <code class="format">var fruits = ["banana","pineapple","watermelon","mango"]</code>
+        <p class="code-format">
+            <code>
+                var <span style="color: dodgerblue;">fruits</span> = ["banana","pineapple","watermelon","mango"]
+            </code>
         </p>
         <br>
         <p>
             We can also access specific data from arrays using zero-based indexing. This means that the first item in an array has an index of 0. For example, we want to access <code style="color: dodgerblue;">"watermelon"</code>, the third fruit in our array we would write: 
         </p>
-        <br>
-        <p>
-            <code class="format">fruits[2]<span style="color:orangered;">   // returns "watermelon"</span></code>
+        <p class="code-format">
+            <code>
+                <span style="color: dodgerblue;">fruits</span>[2]<span style="color:#00b200;">&nbsp;&nbsp;// returns "watermelon"</span>
+            </code>
         </p>
         <br>
         <p>
             Items can also be added or removed from array using <code style="color: dodgerblue;">push()</code> or <code style="color: dodgerblue;">pop()</code> respectively. Let's say we want to add 'dragonfruit' and remove 'banana' from our fruits variable, we would write:
         </p>
-        <br>
-        <div style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 1em; border-radius: 5px;">
-            <p>
-                <code><span style="color: orangered;">// adds item to the end of an array</span><br></code>
-                <code>fruits.push('dragonfruit')<br></code>
-            </p>
-            <p>
-                <code><span style="color: orangered;">// removes item from the end of an array</span><br></code>
-                <code>fruits.pop()</code>
-            </p>
-        </div>
+        <p class="code-format">
+            <code>
+                <span style="color: #00b200;">// adds item to the end of an array</span>
+                <br>
+                fruits<span style="color: dodgerblue;">.push</span>('dragonfruit')
+                <br>
+                <br>
+                <span style="color: #00b200;">// removes item from the end of an array</span>
+                <br>
+                fruits<span style="color: dodgerblue;">.pop</span>('banana')
+            </code>
+        </p>
         <br>
         <p style="text-decoration: underline; color: slategray;">
             <strong>OBJECTS</strong>
         </p>
         <p>
-            Objects are used to represent data that can be defined by a certain set of characteristics. These characteristics are called properties that consists of a key and a value. 
+            Objects are used to represent data that can be defined by a certain set of characteristics. These characteristics are called properties that consists of a <span style="color:mediumslateblue">key</span> and a <span style="color: orangered;">value</span>. 
         </p>
         <p>
-            For example, we could create an object on data we have collected about dolphins. This would have the following syntax:
+            For example, we could create an object on data we have collected about <span style="color: dodgerblue;">dolphins</span>. This would have the following syntax:
         </p>
-        <br>
-            <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 1em; border-radius: 5px;">
-                <code>var dolphins = {<br>
-                    species: "maui dolphin",<br>
-                    age: 3,<br>
-                    size: 1.5,<br>
-                    endangered: true
-                </code>
-            </p>
-        <br>
-        <p>
-            Properties in objects can also be accessed, added, changed, and removed by using either the dot <code style="color: dodgerblue;">.notation</code> or bracket <code style=color:dodgerblue>[notation]</code>.
-        </p>
-        <p>
-            To get the value of the <code style="color: dodgerblue;">species</code> property in our <code style="color: dodgerblue;">dolphins</code> object we would write:
-        </p>
-        <br>
-        <div style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 1em; border-radius: 5px;">
-            <p>
-                <code class="format">dolphins.species<span style="color:orangered;">   // returns "maui dolphin"</span></code>
-            </p>
-            <p>
-                <code class="format">dolphins['species']<span style="color:orangered;">   // returns "maui dolphin"</span></code>
-            </p>
-        </div>
-        <br>
-        <p>
-            If we wanted to change the endangered status of the dolphin to false we would write:
+        <p class="code-format">
+            <code>
+                var <span style="color: dodgerblue;">dolphins</span> = {
+                <br>
+                &nbsp;&nbsp;<span style="color: mediumslateblue;">species</span>: <span style="color: orangered;">"maui dolphin"</span>,
+                <br>
+                &nbsp;&nbsp;<span style="color: mediumslateblue;">age</span>: <span style="color: orangered;">3</span>,
+                <br>
+                &nbsp;&nbsp;<span style="color: mediumslateblue;">size</span>: <span style="color: orangered;">1.5</span>,
+                <br>
+                &nbsp;&nbsp;<span style="color: mediumslateblue;">endangered</span>: <span style="color: orangered;">true</span>
+                <br>
+                }
+            </code>
         </p>
         <br>
         <p>
-            <code class="format">dolphins.endangered = true</code>
+            Properties in objects can also be accessed, added, changed, and removed by using either the dot <code style="color: mediumslateblue">.notation</code> or bracket <code style="color: mediumslateblue;">[notation]</code>.
+        </p>
+        <p>
+            To get the value of the <code style="color:mediumslateblue">species</code> property in our <code style="color: dodgerblue;">dolphins</code> object we would write:
+        </p>
+        <!-- <br> -->
+        <p class="code-format">
+            <code>
+                <span style="color: dodgerblue;">dolphins</span><span style="color: mediumslateblue;">.species</span><span style="color:#00b200;">&nbsp;&nbsp;// returns "maui dolphin"</span>
+                <br>
+                <br>
+                <span style="color: dodgerblue;">dolphins</span><span style="color: mediumslateblue;">['species']</span><span style="color:#00b200;">&nbsp;&nbsp;// returns "maui dolphin"</span>
+            </code>
         </p>
         <br>
         <p>
-            And if we wanted to add a new property like skinColour to our dolphin object we would write:
+            If we wanted to change the <span style="color: mediumslateblue;"><code>endangered</code></span> status of the dolphin to false we would write:
+        </p>
+        <p class="code-format">
+            <code>
+                <span style="color: dodgerblue;">dolphins</span>.<span style="color: mediumslateblue;">endangered</span> = false
+            </code>
         </p>
         <br>
         <p>
-            <code class="format">dolphins.skinColour = ["grey", "white"]</code>
+            And if we wanted to add a new property like <span style="color: mediumslateblue;">skinColour</span> to our dolphin object we would write:
+        </p>
+        <p class="code-format">
+            <code>
+                <span style="color: dodgerblue;">dolphins</span>.<span style="color: mediumslateblue;">skinColour</span> = ["grey", "white"]
+            </code>
         </p>
         <br>
         <p>
             Finally we could also remove the age property from our dolphins object like this:
         </p>
-        <br>
-        <p>
-            <code class="format">delete dolphins.age</code>
+        <p class="code-format">
+            <code>
+                <span style="color: orangered;">delete</span> <span style="color: dodgerblue;">dolphins</span>.<span style="color: mediumslateblue;">age</span>
+            </code>
         </p>
         <br>
         <br>
@@ -169,31 +181,46 @@
         </p>
         <p>
             <ul>
-                <li>The name of the function</li>
-                <li>A list of parameters (can be one, many or none)</li>
-                <li>The code to be executed by the function</li>
+                <li>The <span style="color: orangered;">name</span> of the function</li>
+                <li>A list of <span style="color: mediumslateblue;">parameters</span> (can be one, many or none)</li>
+                <li>The <span style="color:#00b200;">code to be executed</span> by the function</li>
                 <li>The function is executed when it has been called</li>
             </ul>
         </p>
         <p>
             Function syntax:
         </p>
-        <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 1em; border-radius: 5px;">
+        <p class="code-format">
             <code>
-                function name(parameter1, parameter2, parameter3) {
-                    <br>
-                    <span style="color: orangered;">// code to be executed</span>
-                    <br>
+                <span style="color: dodgerblue;">function</span> <span style="color: orangered;">name</span><span style="color: mediumslateblue;">(parameter1, parameter2, parameter3)</span> {
+                <br>
+                &nbsp;&nbsp;<span style="color: #00b200">// code to be executed</span>  
+                <br>  
                 }
                 <br>
                 <br>
-                name(parameter1, parameter2, parameter3) <span style="color: orangered;">// calling the function</span>
+                <br>
+                <span style="color: #00b200">// calling the function</span>
+                <br>
+                <span style="color: orangered;">name</span><span style="color: mediumslateblue;">(parameter1, parameter2, parameter3)</span>
             </code>
         </p>
         <p>
             Let’s look at an example, maybe we want to calculate the distance our car travels when we input it’s speed and time into our function. This is how we would write it:
         </p>
-        <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 1em; border-radius: 5px;">
+        <p class="code-format">
+            <code>
+                <span style="color: dodgerblue;">function</span> <span style="color: orangered;">carDistance</span><span style="color: mediumslateblue;">(speed, time)</span> {
+                    <br>
+                    &nbsp;&nbsp;return speed * time;
+                    <br>  
+                    }
+                    <br>
+                    <br>
+                    <span style="color: orangered;">carDistance</span><span style="color: mediumslateblue;">(50, 2)</span>&nbsp;&nbsp;<span style="color: #00b200">// returns car distance of 100</span>
+            </code>
+        </p>
+        <!-- <p style="background-color: #F2F2F2; color: dodgerblue; width: auto; padding: 1em; border-radius: 5px;">
             <code>
                 function carDistance(speed, time) {<br>
                     return speed * time;<br>
@@ -201,7 +228,7 @@
 
                 carDistance(50, 2)  <span style="color: orangered;">// returns car distance of 100</span>
             </code>
-        </p>
+        </p> -->
         <br>
         <h3 class="blog-heading-3">THE DOM & DEVTOOLS</h3>
         <hr>
