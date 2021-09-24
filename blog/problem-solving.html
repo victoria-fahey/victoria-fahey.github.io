@@ -48,25 +48,150 @@
             </ul>
         </p>
         <h3 class="blog-questions">Pseudocode</h3>
+        <p>
+            Pseudocode is not actual code, but comments that tell you how the code will eventually look. These are informal, plainly written steps that form the rough draft or outline of your code. This is useful for breaking down a complicated problem, and can also be used if one developer needs to leave instructions for another to complete the code later.
+        </p>
+        <p>
+            I'm a big fan of pseudocode as it gives me a reference point of what I actually want to achieve. It especially keeps me on track for when I'm trying out different solutions to a problem and lose sight of what it is I'm meant to do. 
+        </p>
         <h3 class="blog-questions">Rubber Ducky Method</h3>
         <img id="rubber-duck" src="images/rubber_ducky.png" alt="rubber duck saying have you tried explaining it to the rubber duck">
         <p>
-            Explaining your problem out loud may just help you solve and debug your code yourself!
+            Explaining your problem out loud may just help you solve and debug your code yourself! By explaining your code or problem line-by-line to the rubber or metahphorical duck, this can help you better understand or find the gaps in your knowledge needed to solve the problem. 
+        </p>
+        <p>
+            Although I've never used a rubber duck, I have defintely used this method with a person where just the simple act of saying your problem out loud to something or someone else can sometimes make it all click and give you the "aha" moment &#128161;
+        </p>
+        <h3 class="blog-questions">Console.logging</h3>
+        <p>
+            Sometimes you need a little extra visibility when writing out your code to see if what your coding is actually working and doing what you want it to do. One way to achieve this is to use the JavaScript function <span style="color: dodgerblue;"><code>console.log()</code></span> that allows you to print/display things to your console.
+        </p>
+        <p>
+            I have personally found this to be a very useful problem solving technique espeically during the Sprint 4 kata's. For example I used <span style="color: dodgerblue;"><code>console.log()</code></span> to test the outcome of my <span style="color:orangered;"><code>deBee</code></span> function to remove the word "buzz" from a string: 
+        </p>
+        <p class="code-format">
+            <code>
+                function <span style="color: orangered;">deBee</span>(str){
+                <br>
+                &nbsp;&nbsp;var words = str.split(' ').filter(word => {
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;return word != "buzz" 
+                <br>    
+                &nbsp;&nbsp;})
+                <br>
+                &nbsp;&nbsp;return words.join(' ').toLowerCase()
+                <br>
+                }
+                <br>
+                <br>
+                var string = "Help! buzz I'm buzz buzz surrounded buzz by buzz buzz bees!!"
+                <br>
+                <br>
+                <span style="color: dodgerblue;">console.log</span>(<span style="color: orangered;">deBee</span>(string)) &nbsp;&nbsp;<span style="color:#00b200;">// returns output to console "Help! I'm surrounded by bees!!"</span>
+            </code>
+        </p>
+        <h3 class="blog-questions">Google</h3>
+        <p>
+            This is probably my favourite and #1 go-to method for problem solving ANYTHING whether that be coding or figuring out how long to boil an egg for &#129315;
         </p>
         <br>
         <h3 class="blog-heading-3">STORY TIME: GETTING BLOCKED ON A SIMPLE PROBLEM</h3>
         <hr>
         <br>
         <p>
-            INSERT MORE CONTENT HERE
+            A simple problem I got blocked on is something I finally figured out while writing this technical blog! 
+        </p>
+        <p>
+            For the past 4 weeks I could not for the life of me figure out how to insert inline blank space for my blog code blocks to have nice formatting (e.g. inserting tab spaces). The first thing I tried to do is go to google and tried a whole bunch of solutions such as using <span style="color: dodgerblue;"><code>""</code></span> and the <span style="color: dodgerblue;"><code>&lt;pre&gt;</pre></code></span> tag but it still wasn't happening for me. Then today, I happened to visit a site that also had code block examples and so I used DevTools to inspect their code and found they used <span style="color: dodgerblue;"><code>&amp;nbsp;</code></span> to achieve what I wanted. 
+        </p>
+        <p>
+            <strong>To achieve this indentation:</strong>
+        </p>
+        <p class="code-format">
+            <code>
+                exampleObject {
+                <br>
+                &nbsp;&nbsp;name: "victoria",
+                <br>
+                &nbsp;&nbsp;age: 28,
+                <br>
+                &nbsp;&nbsp;occupation: "marine biologist"
+                <br>
+                }
+            </code>
+        </p>
+        <p>
+            <strong>The code in HTML looks like this:</strong>
+        </p>
+        <p class="code-format">
+            <code>
+                exampleObject {
+                <br>
+                <span style="color: dodgerblue;">&amp;nbsp;&amp;nbsp;</span>name: "victoria",
+                <br>
+                <span style="color: dodgerblue;">&amp;nbsp;&amp;nbsp;</span>age: 28,
+                <br>
+                <span style="color: dodgerblue;">&amp;nbsp;&amp;nbsp;</span>occupation: "marine biologist"
+                <br>
+                }
+            </code>
         </p>
         <br>
         <h3 class="blog-heading-3">STORY TIME: ELEGANT PROBLEM SOLVING</h3>
         <hr>
         <br>
         <p>
-            INSERT MORE CONTENT HERE
+            An elegant solition I was pretty proud of was figuring out the <span style="color: orangered;"><code>forEach</code></span> method in the JS olympics repl.it challenge instead of using a normal <span style="color:orangered"><code>for loop</code></span>. 
         </p>
+        <p>
+            Normally I find that using the temporary <code>[i]</code> variables in the for loop can end up being quite confusing, and the <span style="color: orangered;"><code>forEach</code></span> method takes out all of that syntax and lets you do the same thing with little code. 
+        </p>
+        <p>
+            <strong>Initial solution:</strong>
+        </p>
+        <p class="code-format">
+            <code>
+                <span style="color: orangered;">for</span> (var i = 0; i < athleteArray.length; i++) {
+                <br>
+                &nbsp;&nbsp;let athlete = athleteArray[i]
+                <br>
+                &nbsp;&nbsp;console.log(athlete.name + " won the " + athlete.sport + " event!")
+                <br>
+                }
+                <br>
+                <br>
+                <span style="color:#00b200;">// returns</span>
+                <br>
+                <span style="color:#00b200;">// Santa won the delivery event!</span>
+                <br>
+                <span style="color:#00b200;">// Bart won the skating event!</span>
+                <br>
+                <span style="color:#00b200;">// Homer won the eating event!</span>
+            </code>
+        </p>
+        <p>
+            Although the above code was console.logging the correct answer, it wasn't adding a <span style="color:mediumslateblue;"><code>win</code></span> property to every element in the athleteArray (which I couldn't figure out) so instead I went to google and found a simple solution that applies a specified function for each element in an array.
+        </p>
+        <p>
+            <strong>Elegant solution:</strong>
+        </p>
+        <p class="code-format">
+            <code>
+                athleteArray.<span style="color: orangered;">forEach</span>(athlete => {
+                <br>    
+                &nbsp;&nbsp;athlete.<span style="color:mediumslateblue;">win</span> = function() {
+                <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log(athlete.name + " won the " + athlete.sport + " event!")
+                <br>
+                &nbsp;&nbsp;} 
+                <br>
+                })
+            </code>
+        </p>
+        <p>
+            Now we can see in the below output that in our athleteArray we have added a <span style="color:mediumslateblue;"><code>win</code></span> property to it which console logs <span style="color:#00b200;"><code>"{name} win the {sport} event!"</code></span>  
+        </p>
+        <img src="images/problem_solving_output.png" alt="example output from using our earlier forEach method">
     </div>
 </body>
 </html>    

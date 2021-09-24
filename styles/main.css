@@ -180,6 +180,15 @@ code.format {
     border-radius: 5px;
 }
 
+/* generic code format with black font */
+.code-format {
+    background-color: #F2F2F2;
+    width: auto;
+    height: auto;
+    padding: 1em;
+    border-radius: 5px;   
+}
+
 img#dom {
     max-width: 100%;
     height: auto;
@@ -188,4 +197,10 @@ img#dom {
 img#rubber-duck {
     max-width: 100%;
     height: 400px;
+    float: right;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
