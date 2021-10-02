@@ -204,3 +204,9 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+ol {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: justify;
+}
