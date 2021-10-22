@@ -228,3 +228,9 @@ img#imposter-syndrome {
     background-color: dodgerblue;
     border-radius: 5px;
 }
+
+@media only screen and (max-width: 320px) {
+    .div-blog-content {
+        margin: 40px;
+    }
+}
